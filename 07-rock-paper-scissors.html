@@ -16,14 +16,14 @@
     ">Paper</button>
     
     <button onclick="
-      playGame('scissors');
+      playGame('scissors'); <!--when we click the scissors button, we call the playGame function.-->
     ">Scissors</button>
 
     <script> //placed this piece of code in the script element bc script element runs when pg. is loaded. 
-      function playGame(playerMove) {
-        const computerMove = pickComputerMove(); //1) when we click this button, were going to run this function. 
+      function playGame(playerMove) { 
+        const computerMove = pickComputerMove(); //when we call the playGame function, we then go into the pickComputerMove function.  
 
-        let result = '';
+        let result = ''; //4) this code runs. 
         
         if (playerMove === 'scissors') {
           if (computerMove === 'rock') {
@@ -57,7 +57,7 @@
       alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`);
       }
 
-      function pickComputerMove() {
+      function pickComputerMove() { 
         const randomNumber = Math.random(); //2) its going to run this code top to bottom. 
 
         let computerMove = ''; 
